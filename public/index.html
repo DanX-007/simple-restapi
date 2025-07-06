@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanX API Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://files.catbox.moe/85t0vq.jpg">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="header-content">
+                <img src="https://files.catbox.moe/85t0vq.jpg" alt="Logo" class="logo">
+                <div class="header-text">
+                    <h1>DanX API</h1>
+                    <p>Fast & simple API Services</p>
+                </div>
+            </div>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </header>
+
+        <main class="main-content">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search APIs by title or description...">
+                <button id="clearSearch" class="clear-search" aria-label="Clear search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div id="loadingSkeleton" class="skeleton-container">
+                <!-- Skeleton loading will appear here -->
+            </div>
+
+            <div id="api-categories" class="api-container"></div>
+
+            <div id="noResults" class="no-results">
+                <i class="fas fa-search"></i>
+                <h3>No APIs found</h3>
+                <p>Try a different search term</p>
+            </div>
+
+            <!-- API Key Checker Section - Moved to bottom -->
+            <div class="api-key-checker">
+                <h2><i class="fas fa-key"></i> Check Your API Key</h2>
+                <div class="key-check-input">
+                    <input type="text" id="apiKeyInput" placeholder="Enter your API key">
+                    <button id="checkKeyBtn" class="check-key-btn">
+                        <i class="fas fa-check"></i> Check Key
+                    </button>
+                </div>
+                <div id="keyCheckResult" class="key-check-result">
+                    <!-- Result will appear here -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            
+            <div class="social-links">
+                <a href="https://github.com/DANNN9999" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/+6283146276723" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/DANNN_0102" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+            <p>© 2025 DanX API Services. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
