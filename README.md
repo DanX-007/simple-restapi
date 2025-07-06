@@ -1,1 +1,1 @@
-#Simplely Rest API
+# Simple template restapi
